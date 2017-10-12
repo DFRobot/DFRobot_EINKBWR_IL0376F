@@ -1,0 +1,33 @@
+#######################################
+# Syntax Coloring DFRobot_EINKBWR_IL0376F
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_EINKBWR_IL0376F	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################	
+
+begin	KEYWORD2
+picDisplay	KEYWORD2
+disRefresh	KEYWORD2
+disStr	KEYWORD2
+clear	KEYWORD2
+drawPoint	KEYWORD2
+drawLine	KEYWORD2
+drawRectangle	KEYWORD2
+drawCircle	KEYWORD2
+rectangleFILL	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+LUCENCY	LITERAL1
+WHITE	LITERAL1
+RED	LITERAL1
+BLACK	LITERAL1
