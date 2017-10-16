@@ -1,4 +1,10 @@
 #  FireBeetle Covers-ePaper Display Module Driver
+The display is a TFT active matrix electrophoretic display, with interface and a reference system design. The
+2.13” active area contains 212×104 pixels, and has 1-bit black/white and highlight red full display capabilities.
+An integrated circuit contains gate buffer, source buffer, interface, timing control logic, oscillator, DC-DC,
+SRAM, LUT, VCOM and border are supplied with each panel.
+
+![SVG1](https://raw.githubusercontent.com/DFRobot/binaryfiles/master/SEN0245/SEN0245svg1.png)
 
 ## DFRobot_Motor Library for Arduino
 ---------------------------------------------------------
