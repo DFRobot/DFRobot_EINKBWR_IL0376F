@@ -15,7 +15,7 @@
   //*(x,y):  coordinate (x∈(0,211),y∈(0,103)
   //*ch:     The string to display
   //*color:  BLACK or WHITE or RED
-//disRefresh()
+//flush()
   //*This function is used to refresh the screen display
   
 DFRobot_EINKBWR_IL0376F eink_IL0376F;
@@ -37,7 +37,7 @@ void loop(void){
     //Displays a string, red font
     eink_IL0376F.disStr(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
     //Refresh screen display
-    eink_IL0376F.disRefresh();
+    eink_IL0376F.flush();
     delay(3000);
 
     //Clear the screen and display white
@@ -45,7 +45,7 @@ void loop(void){
     //Displays a string, red font
     eink_IL0376F.disStr(12,12,"DFRobot三色电子墨水屏测试程序",RED);
     //Refresh screen display
-    eink_IL0376F.disRefresh();
+    eink_IL0376F.flush();
     delay(3000);
 }
 

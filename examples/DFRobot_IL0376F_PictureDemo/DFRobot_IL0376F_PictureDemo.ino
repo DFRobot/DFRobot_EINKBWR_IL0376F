@@ -14,7 +14,7 @@
   //*This function is used to draw points
   //*pic_bw:   Black and white part
   //*pic_red:  The red part
-//disRefresh()
+//flush()
   //*This function is used to refresh the screen display
 
 DFRobot_EINKBWR_IL0376F eink_IL0376F;
@@ -392,7 +392,7 @@ void loop(void)
     //Show a picture
     eink_IL0376F.picDisplay(DFRobot_bw, DFRobot_red);
     //Refresh screen display
-    eink_IL0376F.disRefresh();
+    eink_IL0376F.flush();
     delay(3000);
 }
 

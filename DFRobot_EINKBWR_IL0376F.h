@@ -60,7 +60,7 @@ public:
     ~DFRobot_EINKBWR_IL0376F();
     void begin(const char cs_W21, const char cs_GT30, const char dc, const char busy);
     void picDisplay(const unsigned char *pic_bw, const unsigned char *pic_red);
-    void disRefresh();
+    void flush();
     void disStr(uint8_t x, uint8_t y, char *ch, uint8_t color);
     uint8_t character_type = CHARACTER_TYPE_UTF8;
     InkScreen_Error clear(uint8_t color);

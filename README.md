@@ -61,7 +61,7 @@ void picDisplay(const unsigned char *pic_bw, const unsigned char *pic_red);
 /*
  * @brief The refresh screen
  */
-void disRefresh(void);
+void flush(void);
 
 /*
  * @brief Display string

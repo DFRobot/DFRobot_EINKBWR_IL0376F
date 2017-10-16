@@ -35,7 +35,7 @@
   //*(xc,yc):  Center coordinates (xc∈(0,211),yc∈(0,103)
   //*r:        radii(r<=52)
   //*fill:     0:Hollow   1:solid
-//disRefresh()
+//flush()
   //*This function is used to refresh the screen display
   
 DFRobot_EINKBWR_IL0376F eink_IL0376F;
@@ -73,7 +73,7 @@ void loop(void)
     //Draw a solid circle
     eink_IL0376F.drawCircle(160,51,30,1,BLACK);
     //Refresh screen display
-    eink_IL0376F.disRefresh();
+    eink_IL0376F.flush();
     delay(8000);
     //Clear the screen and display white
 }

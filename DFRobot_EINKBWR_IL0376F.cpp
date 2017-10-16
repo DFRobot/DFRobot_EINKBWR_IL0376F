@@ -151,7 +151,7 @@ void DFRobot_EINKBWR_IL0376F::picDisplay(const unsigned char *pic_bw, const unsi
         DF_Display_red[i] = pic_red[i];
 }
 
-void DFRobot_EINKBWR_IL0376F::disRefresh()
+void DFRobot_EINKBWR_IL0376F::flush()
 {
     if(eInkdev.scandir == EINK_SCAN_DIR3){
         powerOn();
@@ -233,7 +233,7 @@ InkScreen_Error DFRobot_EINKBWR_IL0376F::clear(uint8_t color)
         DF_Display_bw[i]=bw;
         DF_Display_red[i]=red;
     }
-    //disRefresh();
+    //flush();
     return true;
 }
 
