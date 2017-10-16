@@ -18,7 +18,7 @@
 //flush()
   //*This function is used to refresh the screen display
   
-DFRobot_EINKBWR_IL0376F eink_IL0376F;
+DFRobot_EINKBWR_IL0376F eink;
 
 #define EINK_CS  D3
 #define Font_CS  D6
@@ -28,24 +28,24 @@ DFRobot_EINKBWR_IL0376F eink_IL0376F;
 void setup(void){
     Serial.begin(115200);
     //Select the corresponding pins
-    eink_IL0376F.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
+    eink.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
 }
 
 void loop(void){
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Displays a string, red font
-    eink_IL0376F.disStr(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
+    eink.disStr(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
     delay(8000);
 
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Displays a string, red font
-    eink_IL0376F.disStr(12,12,"DFRobot三色电子墨水屏测试程序",RED);
+    eink.disStr(12,12,"DFRobot三色电子墨水屏测试程序",RED);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
     delay(8000);
 }
 

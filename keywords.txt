@@ -21,7 +21,7 @@ drawPoint	KEYWORD2
 drawLine	KEYWORD2
 drawRectangle	KEYWORD2
 drawCircle	KEYWORD2
-rectangleFILL	KEYWORD2
+rectangleFill	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

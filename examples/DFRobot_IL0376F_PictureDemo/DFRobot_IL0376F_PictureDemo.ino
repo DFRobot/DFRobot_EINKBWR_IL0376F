@@ -17,14 +17,14 @@
 //flush()
   //*This function is used to refresh the screen display
 
-DFRobot_EINKBWR_IL0376F eink_IL0376F;
+DFRobot_EINKBWR_IL0376F eink;
 
 #define EINK_CS  D3
 #define Font_CS  D6
 #define EINK_DC  D8
 #define BUSY     D7
 
-const unsigned char  Pic_bw[] =
+const unsigned char  picBW[] =
 {
 0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
 0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,0XFF,
@@ -201,7 +201,7 @@ const unsigned char  Pic_bw[] =
 0XFF,0XFF,0XFF,0XFF
 };
 
-const unsigned char  Pic_red[] =
+const unsigned char  picRED[] =
 {
 0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,
 0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,0X00,
@@ -382,33 +382,33 @@ void setup(void)
 {
     Serial.begin(115200);
     //Select the corresponding pins
-    eink_IL0376F.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
+    eink.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
 
     /*********Only show the black images********/
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Show a picture
-    eink_IL0376F.picDisplay(Pic_bw, NULL);
+    eink.picture(picBW, NULL);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
     delay(8000);
 
     /*********Only show the red image********/
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Show a picture
-    eink_IL0376F.picDisplay(NULL, Pic_red);
+    eink.picture(NULL, picRED);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
     delay(8000);
 
     /*********Show all images********/
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Show a picture
-    eink_IL0376F.picDisplay(Pic_bw, Pic_red);
+    eink.picture(picBW, picRED);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
 }
 
 void loop(void)

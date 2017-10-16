@@ -136,7 +136,7 @@ void DFRobot_EINKBWR_IL0376F::powerOff(void)
 }
 
 
-void DFRobot_EINKBWR_IL0376F::picDisplay(const unsigned char *pic_bw = NULL, const unsigned char *pic_red = NULL)
+void DFRobot_EINKBWR_IL0376F::picture(const unsigned char *pic_bw = NULL, const unsigned char *pic_red = NULL)
 {
     //The image data to be displayed is stored in the cache
     if(pic_bw == NULL){

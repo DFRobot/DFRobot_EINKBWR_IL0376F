@@ -38,7 +38,7 @@
 //flush()
   //*This function is used to refresh the screen display
   
-DFRobot_EINKBWR_IL0376F eink_IL0376F;
+DFRobot_EINKBWR_IL0376F eink;
 
 #define EINK_CS  D3
 #define Font_CS  D6
@@ -49,28 +49,28 @@ void setup(void)
 {
     Serial.begin(115200);
     //Select the corresponding pins
-    eink_IL0376F.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
+    eink.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
 
     //Clear the screen and display white
-    eink_IL0376F.clear(WHITE);
+    eink.clear(WHITE);
     //Let me draw a red dot
     for(uint8_t x=12,y=12; y<92; y+=2)
     {
-        eink_IL0376F.drawPoint(x,y,RED);
+        eink.drawPoint(x,y,RED);
     }
     //Draw two lines
-    eink_IL0376F.drawLine(24,12,36,92,RED);
-    eink_IL0376F.drawLine(36,12,24,92,RED);
+    eink.drawLine(24,12,36,92,RED);
+    eink.drawLine(36,12,24,92,RED);
     //Draw a red rectangle
-    eink_IL0376F.drawRectangle(48,12,98,92,RED);
+    eink.drawRectangle(48,12,98,92,RED);
     //Fill a rectangle with black
-    eink_IL0376F.rectangleFill(55,19,91,85,BLACK);
+    eink.rectangleFill(55,19,91,85,BLACK);
     //Draw a hollow circle
-    eink_IL0376F.drawCircle(160,51,40,0,RED);
+    eink.drawCircle(160,51,40,0,RED);
     //Draw a solid circle
-    eink_IL0376F.drawCircle(160,51,30,1,BLACK);
+    eink.drawCircle(160,51,30,1,BLACK);
     //Refresh screen display
-    eink_IL0376F.flush();
+    eink.flush();
 }
 
 void loop(void)
