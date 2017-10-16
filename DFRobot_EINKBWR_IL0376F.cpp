@@ -93,18 +93,11 @@ void DFRobot_EINKBWR_IL0376F::setWindow(uint16_t x, uint16_t y){
 
 void DFRobot_EINKBWR_IL0376F::stateScan(void)
 {
-    uint16_t timeout=0;
     while(1){
         if(digitalRead(DFR_W21_BUSY)==1){
             break;
         }
-        delay(1);
-        timeout++;
-        if(timeout>5000){
-            Serial.println("Timeout, the bus is busy!");
-            break;
-        }
-    }
+	}
 }
 
 void DFRobot_EINKBWR_IL0376F::powerOn(void)
@@ -139,7 +132,7 @@ void DFRobot_EINKBWR_IL0376F::powerOff(void)
     wirteData(0x00);
     wirteData(0x00);
     wirteCmd(0X02);//Power off
-    delay(500);
+    delay(3000);
 }
 
 void DFRobot_EINKBWR_IL0376F::picDisplay(const unsigned char *pic_bw, const unsigned char *pic_red)

@@ -6,7 +6,7 @@ SRAM, LUT, VCOM and border are supplied with each panel.
 
 ![SVG1](https://raw.githubusercontent.com/DFRobot/binaryfiles/master/DFR0511/DFR0511svg1.png)
 
-## DFRobot_Motor Library for Arduino
+## DFRobot_EINKBWR_IL0376F Library for Arduino
 ---------------------------------------------------------
 
 Provide an Arduino library to control the e-ink screen display, via SPI communication.
