@@ -38,7 +38,7 @@ void loop(void){
     eink_IL0376F.disStr(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
     //Refresh screen display
     eink_IL0376F.flush();
-    delay(3000);
+    delay(8000);
 
     //Clear the screen and display white
     eink_IL0376F.clear(WHITE);
@@ -46,7 +46,7 @@ void loop(void){
     eink_IL0376F.disStr(12,12,"DFRobot三色电子墨水屏测试程序",RED);
     //Refresh screen display
     eink_IL0376F.flush();
-    delay(3000);
+    delay(8000);
 }
 
 

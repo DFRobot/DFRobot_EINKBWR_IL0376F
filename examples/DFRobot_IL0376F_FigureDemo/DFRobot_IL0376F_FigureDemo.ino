@@ -50,10 +50,7 @@ void setup(void)
     Serial.begin(115200);
     //Select the corresponding pins
     eink_IL0376F.begin(EINK_CS, Font_CS, EINK_DC, BUSY);
-}
 
-void loop(void)
-{
     //Clear the screen and display white
     eink_IL0376F.clear(WHITE);
     //Let me draw a red dot
@@ -74,8 +71,11 @@ void loop(void)
     eink_IL0376F.drawCircle(160,51,30,1,BLACK);
     //Refresh screen display
     eink_IL0376F.flush();
+}
+
+void loop(void)
+{
     delay(8000);
-    //Clear the screen and display white
 }
 
 

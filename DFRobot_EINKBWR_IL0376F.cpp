@@ -135,13 +135,24 @@ void DFRobot_EINKBWR_IL0376F::powerOff(void)
     delay(3000);
 }
 
-void DFRobot_EINKBWR_IL0376F::picDisplay(const unsigned char *pic_bw, const unsigned char *pic_red)
+
+void DFRobot_EINKBWR_IL0376F::picDisplay(const unsigned char *pic_bw = NULL, const unsigned char *pic_red = NULL)
 {
     //The image data to be displayed is stored in the cache
-    for(int i  =0; i < 2756; i++)
-        DF_Display_bw[i] = pic_bw[i];
-    for(int i = 0; i < 2756; i++)
-        DF_Display_red[i] = pic_red[i];
+    if(pic_bw == NULL){
+        for(int i  =0; i < 2756; i++)
+            DF_Display_bw[i] = 0;
+    }else{
+        for(int i  =0; i < 2756; i++)
+            DF_Display_bw[i] = pic_bw[i];
+    }
+    if(pic_red == NULL){
+        for(int i  =0; i < 2756; i++)
+            DF_Display_red[i] = 0;
+    }else{
+        for(int i  =0; i < 2756; i++)
+            DF_Display_red[i] = pic_red[i];
+    }
 }
 
 void DFRobot_EINKBWR_IL0376F::flush()
