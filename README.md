@@ -4,7 +4,7 @@ The display is a TFT active matrix electrophoretic display, with interface and a
 An integrated circuit contains gate buffer, source buffer, interface, timing control logic, oscillator, DC-DC,
 SRAM, LUT, VCOM and border are supplied with each panel.
 
-![SVG1](https://raw.githubusercontent.com/DFRobot/binaryfiles/master/SEN0245/SEN0245svg1.png)
+![SVG1](https://raw.githubusercontent.com/DFRobot/binaryfiles/master/DFR0511/DFR0511svg1.png)
 
 ## DFRobot_Motor Library for Arduino
 ---------------------------------------------------------
