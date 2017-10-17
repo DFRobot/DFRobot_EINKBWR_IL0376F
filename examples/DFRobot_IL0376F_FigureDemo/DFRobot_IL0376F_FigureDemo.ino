@@ -26,8 +26,6 @@
 //rectangleFILL(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
   //*This function is used to populate the rectangle
   //*(x1,x2):  The starting coordinate of the horizontal coordinate (x1∈(0,211),y1∈(0,103)
-  //*(x1,x2):  The starting coordinate of the horizontal coordinate (x1∈(0,211),y1∈(0,103)
-  //*(x1,x2):  The starting coordinate of the horizontal coordinate (x1∈(0,211),y1∈(0,103)
   //*(y1,y2):  The starting coordinate of the vertical coordinate (x2∈(0,211),y2∈(0,103)
   //*color:    BLACK or WHITE or RED
 //drawCircle(uint16_t xc, uint16_t yc, uint16_t r, uint16_t fill, uint8_t color);
