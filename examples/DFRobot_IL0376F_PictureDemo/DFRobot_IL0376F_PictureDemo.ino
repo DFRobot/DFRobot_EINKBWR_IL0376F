@@ -388,7 +388,7 @@ void setup(void)
     //Clear the screen and display white
     eink.clear(WHITE);
     //Show a picture
-    eink.picture(picBW, NULL);
+    eink.drawPicture(picBW, NULL);
     //Refresh screen display
     eink.flush();
     delay(8000);
@@ -397,7 +397,7 @@ void setup(void)
     //Clear the screen and display white
     eink.clear(WHITE);
     //Show a picture
-    eink.picture(NULL, picRED);
+    eink.drawPicture(NULL, picRED);
     //Refresh screen display
     eink.flush();
     delay(8000);
@@ -406,7 +406,7 @@ void setup(void)
     //Clear the screen and display white
     eink.clear(WHITE);
     //Show a picture
-    eink.picture(picBW, picRED);
+    eink.drawPicture(picBW, picRED);
     //Refresh screen display
     eink.flush();
 }

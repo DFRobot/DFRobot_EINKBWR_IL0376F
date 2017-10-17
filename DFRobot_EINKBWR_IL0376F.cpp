@@ -5,7 +5,7 @@ unsigned char  *DF_Display_bw = new unsigned char[2756];
 unsigned char  *DF_Display_red = new unsigned char[2756];
 
 DFRobot_EINKBWR_IL0376F::DFRobot_EINKBWR_IL0376F():
-    DFR_W21_CS(2), DFR_W21_DC(12), DFR_GT30_CS(4)
+    DFR_W21_CS(2), DFR_W21_DC(12), DFR_GT30_CS(4), character_type(CHARACTER_TYPE_UTF8)
 {}
 
 DFRobot_EINKBWR_IL0376F::~DFRobot_EINKBWR_IL0376F()
@@ -136,7 +136,7 @@ void DFRobot_EINKBWR_IL0376F::powerOff(void)
 }
 
 
-void DFRobot_EINKBWR_IL0376F::picture(const unsigned char *pic_bw = NULL, const unsigned char *pic_red = NULL)
+void DFRobot_EINKBWR_IL0376F::drawPicture(const unsigned char *pic_bw = NULL, const unsigned char *pic_red = NULL)
 {
     //The image data to be displayed is stored in the cache
     if(pic_bw == NULL){
@@ -345,7 +345,7 @@ InkScreen_Error DFRobot_EINKBWR_IL0376F::drawRectangle(uint16_t x1, uint16_t y1,
     return Status;
 }
 
-InkScreen_Error DFRobot_EINKBWR_IL0376F::rectangleFill(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color)
+InkScreen_Error DFRobot_EINKBWR_IL0376F::drawFillRect(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color)
 {
     InkScreen_Error Status = true;
     uint8_t sx=x1,sy=y1;
@@ -471,7 +471,7 @@ uint32_t DFRobot_EINKBWR_IL0376F::GB2312_addr(char *ch, uint8_t type)
     return temp;
 }
 
-void DFRobot_EINKBWR_IL0376F::disStr(uint8_t x, uint8_t y, char *ch, uint8_t color) 
+void DFRobot_EINKBWR_IL0376F::disString(uint8_t x, uint8_t y, char *ch, uint8_t color) 
 {
     char unicode_hz[2] = {0};
     char gb2312_hz [2] = {0};

@@ -64,7 +64,7 @@ void setup(void)
     //Draw a red rectangle
     eink.drawRectangle(48,12,98,92,RED);
     //Fill a rectangle with black
-    eink.rectangleFill(55,19,91,85,BLACK);
+    eink.drawFillRect(55,19,91,85,BLACK);
     //Draw a hollow circle
     eink.drawCircle(160,51,40,0,RED);
     //Draw a solid circle

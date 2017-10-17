@@ -15,13 +15,13 @@ DFRobot_EINKBWR_IL0376F	KEYWORD1
 begin	KEYWORD2
 picDisplay	KEYWORD2
 flush	KEYWORD2
-disStr	KEYWORD2
+disString	KEYWORD2
 clear	KEYWORD2
 drawPoint	KEYWORD2
 drawLine	KEYWORD2
 drawRectangle	KEYWORD2
 drawCircle	KEYWORD2
-rectangleFill	KEYWORD2
+drawFillRect	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

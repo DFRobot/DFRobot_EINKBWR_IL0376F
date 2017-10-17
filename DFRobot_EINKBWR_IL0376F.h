@@ -59,16 +59,16 @@ public:
     DFRobot_EINKBWR_IL0376F();
     ~DFRobot_EINKBWR_IL0376F();
     void begin(const char cs_W21, const char cs_GT30, const char dc, const char busy);
-    void picture(const unsigned char *pic_bw, const unsigned char *pic_red);
+    void drawPicture(const unsigned char *pic_bw, const unsigned char *pic_red);
     void flush();
-    void disStr(uint8_t x, uint8_t y, char *ch, uint8_t color);
+    void disString(uint8_t x, uint8_t y, char *ch, uint8_t color);
     uint8_t character_type = CHARACTER_TYPE_UTF8;
     InkScreen_Error clear(uint8_t color);
     InkScreen_Error drawPoint(const unsigned char x, const unsigned char y, const unsigned char color);
     InkScreen_Error drawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
     InkScreen_Error drawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
     InkScreen_Error drawCircle(uint16_t xc, uint16_t yc, uint16_t r, uint16_t fill, uint8_t color);
-    InkScreen_Error rectangleFill(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
+    InkScreen_Error drawFillRect(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
 private:
     void spiDelay(unsigned char xsp);
     void spiRead(uint32_t addr, uint8_t len, char *ch);

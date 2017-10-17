@@ -35,7 +35,7 @@ void loop(void){
     //Clear the screen and display white
     eink.clear(WHITE);
     //Displays a string, red font
-    eink.disStr(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
+    eink.disString(12,12,"DFRobot EINK 1234567890,~!@#$%^&*()-+=",RED);
     //Refresh screen display
     eink.flush();
     delay(8000);
@@ -43,7 +43,7 @@ void loop(void){
     //Clear the screen and display white
     eink.clear(WHITE);
     //Displays a string, red font
-    eink.disStr(12,12,"DFRobot三色电子墨水屏测试程序",RED);
+    eink.disString(12,12,"DFRobot三色电子墨水屏测试程序",RED);
     //Refresh screen display
     eink.flush();
     delay(8000);
