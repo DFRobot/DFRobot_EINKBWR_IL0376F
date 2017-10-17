@@ -75,7 +75,7 @@ void flush(void);
  * @param *ch  The string to display
  * @param color  BLACK or WHITE or RED
  */
-void disStr(uint8_t x, uint8_t y, char *ch, uint8_t color);
+void disString(uint8_t x, uint8_t y, char *ch, uint8_t color);
 
 /*
  * @brief Create Point
@@ -107,7 +107,7 @@ InkScreen_Error drawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2
  * @param (y1,y2)  The starting coordinate of the vertical coordinate (y1/y2∈(0,103))
  * @param color  BLACK or WHITE or RED
  */
-InkScreen_Error rectangleFill(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
+InkScreen_Error drawFillRect(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
 
 /*
  * @brief Specify the center and radius to draw the circle
