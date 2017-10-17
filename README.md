@@ -62,7 +62,7 @@ InkScreen_Error clear(uint8_t color);
  * @param pic_bw  Black and white part
  * @param pic_red  The red part
  */
-void picDisplay(const unsigned char *pic_bw, const unsigned char *pic_red);
+void picture(const unsigned char *pic_bw, const unsigned char *pic_red);
 
 /*
  * @brief The refresh screen
