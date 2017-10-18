@@ -95,7 +95,6 @@ InkScreen_Error drawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uin
  * @brief Draw a rectangular
  * @param (x1,x2)  The starting coordinate of the horizontal coordinate (x1/x2∈(0,211))
  * @param (y1,y2)  The starting coordinate of the vertical coordinate (y1/y2∈(0,103))
- * @param (y1,y2)  The starting coordinate of the vertical coordinate (y1/y2∈(0,103))
  * @param color  BLACK or WHITE or RED
  */
 InkScreen_Error drawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t color);
@@ -103,7 +102,6 @@ InkScreen_Error drawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2
 /*
  * @brief Rectangle filling
  * @param (x1,x2)  The starting coordinate of the horizontal coordinate (x1/x2∈(0,211))
- * @param (y1,y2)  The starting coordinate of the vertical coordinate (y1/y2∈(0,103))
  * @param (y1,y2)  The starting coordinate of the vertical coordinate (y1/y2∈(0,103))
  * @param color  BLACK or WHITE or RED
  */
